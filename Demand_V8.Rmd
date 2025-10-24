@@ -111,14 +111,14 @@ library(knitr)
 library(kableExtra)
 
 # Path
-path <- "C:/Users/cata1/Box/Catalina Valencia/Project 3 - 2024NCST-USDOT/Task3_Characterization/R_project/"
+path <- "my location"
 
 # Save key in .Renviron for use across sessions
-set_ipums_api_key("59cba10d8a5da536fc06b59da0970b29817b49a683cef8729cff7d25", 
+set_ipums_api_key("my key", 
                   save = TRUE, overwrite = TRUE)
 
 # Census API 
-key <- "aec7619993c145055b2a7c65030ed6f95aa38e71"
+key <- "my key"
 census_api_key(key, install = TRUE, overwrite=TRUE)
 
 ```
@@ -5077,4 +5077,5 @@ Verify “mean rank shift” really uses ranks
 stopifnot(is.integer(MCDA$rank_base) || all(MCDA$rank_base == rank_vec(MCDA$score_base)))
 
 ```
+
 
